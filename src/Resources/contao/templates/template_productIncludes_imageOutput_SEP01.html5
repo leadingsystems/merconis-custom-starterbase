@@ -1,0 +1,23 @@
+<?php
+$picturesFactory = Contao\System::getContainer()->get('LeadingSystems\MerconisCustomHoehenflugBundle\Display\Product\Pictures\Pictures');
+$pictures = $picturesFactory->create($this->objProduct);
+
+if ($pictures->hasScreenPictures()) {
+    ?>
+    <div class="galleryContainer lsNavtabGalleryProductDetails">
+        <?php
+        foreach($pictures->getScreenPictures() as $picture) {
+            ?>
+            <div class="imageContainer">
+                <a class="lsjs-image-zoomer" href="<?= $picture->src ?>" title="<?= $picture->title ?>">
+                    {{shopPicture::<?= $picture->src ?>?size=productDetailview&class=productImage&class=productImage}}
+                </a>
+            </div>
+            <?php
+        }
+        ?>
+    </div>
+
+    <?php
+}
+?>

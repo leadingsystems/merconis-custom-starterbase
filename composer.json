@@ -1,0 +1,37 @@
+{
+  "name": "leadingsystems/merconis-custom-hoehenflug",
+  "description": "",
+  "keywords": [],
+  "type": "contao-bundle",
+  "license": "proprietary",
+  "require": {
+    "php": ">=8.1.0",
+    "contao/core-bundle": "~4.13",
+    "leadingsystems/contao-merconis": "^5.0",
+    "ext-simplexml": "*",
+    "ext-dom": "*",
+    "ext-libxml": "*",
+    "ext-curl": "*",
+    "ext-mbstring": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "LeadingSystems\\MerconisCustomHoehenflugBundle\\": "src/"
+    },
+    "classmap": [
+      "src/Resources/contao/"
+    ],
+    "exclude-from-classmap": [
+      "src/Resources/contao/config/",
+      "src/Resources/contao/dca/",
+      "src/Resources/contao/languages/",
+      "src/Resources/contao/templates/"
+    ]
+  },
+  "extra": {
+    "contao-manager-plugin": "LeadingSystems\\MerconisCustomHoehenflugBundle\\ContaoManager\\Plugin",
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}
