@@ -1,1 +1,0 @@
-<h1><?php echo $GLOBALS['TL_LANG']['MSC']['merconis-custom']['headline1']; ?></h1>

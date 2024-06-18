@@ -9,16 +9,9 @@ if (TL_MODE == 'BE') {
 }
 
 $GLOBALS['BE_MOD']['merconis_custom'] = array(
-	'merconis_custom_dummy' => array(
-		'tables' => array('tl_merconis_custom_dummy')
-	),
 	'merconis_custom_scheduler' => array(
 		'tables' => array('tl_merconis_custom_scheduler_job')
 	),
-);
-
-$GLOBALS['FE_MOD']['merconis_custom'] = array(
-	'mod_merconis_custom_dummy' => 'Merconis\CustomStarterbase\mod_merconis_custom_dummy'
 );
 
 // MODELS
