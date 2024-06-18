@@ -1,8 +1,8 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\Order\Exporter;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\Order\Exporter;
 
-use LeadingSystems\MerconisCustomHoehenflugBundle\Order\Enum\OrderType;
+use LeadingSystems\MerconisCustomStarterbaseBundle\Order\Enum\OrderType;
 
 interface ExporterInterface
 {

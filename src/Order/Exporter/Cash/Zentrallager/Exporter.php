@@ -1,8 +1,8 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\Order\Exporter\Cash\Zentrallager;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\Order\Exporter\Cash\Zentrallager;
 
-class Exporter extends \LeadingSystems\MerconisCustomHoehenflugBundle\Order\Exporter\Cash\Common\Exporter {
+class Exporter extends \LeadingSystems\MerconisCustomStarterbaseBundle\Order\Exporter\Cash\Common\Exporter {
     protected int $vendorId = 1;
     protected string $buyerNumberSHK = '48936';
     protected string $pathToExportFolder = 'files/exports/Cash/Zentrallager/%s';

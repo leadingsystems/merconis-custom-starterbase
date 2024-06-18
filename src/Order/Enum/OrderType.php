@@ -1,6 +1,6 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\Order\Enum;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\Order\Enum;
 
 enum OrderType
 {

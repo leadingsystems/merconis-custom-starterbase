@@ -1,11 +1,11 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\Order\Exporter\Cash\Common;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\Order\Exporter\Cash\Common;
 
 use DOMDocument;
-use LeadingSystems\MerconisCustomHoehenflugBundle\Display\Product\Data\Data;
-use LeadingSystems\MerconisCustomHoehenflugBundle\Order\Enum\OrderType;
-use LeadingSystems\MerconisCustomHoehenflugBundle\Order\Exporter\ExporterInterface;
+use LeadingSystems\MerconisCustomStarterbaseBundle\Display\Product\Data\Data;
+use LeadingSystems\MerconisCustomStarterbaseBundle\Order\Enum\OrderType;
+use LeadingSystems\MerconisCustomStarterbaseBundle\Order\Exporter\ExporterInterface;
 use Symfony\Component\String\Slugger\SluggerInterface;
 
 class Exporter implements ExporterInterface

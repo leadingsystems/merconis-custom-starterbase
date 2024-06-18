@@ -1,6 +1,6 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\BatchInsertUpdate;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\BatchInsertUpdate;
 
 class BatchInsertUpdate
 {

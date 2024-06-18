@@ -1,9 +1,9 @@
 <?php
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\Importer;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\Importer;
 
-use LeadingSystems\MerconisCustomHoehenflugBundle\ImportFileHandler\Enum\Mode;
-use LeadingSystems\MerconisCustomHoehenflugBundle\ImportFileHandler\ImportFileHandler;
-use LeadingSystems\MerconisCustomHoehenflugBundle\Scheduler\Traits\SchedulableTrait;
+use LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\Enum\Mode;
+use LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\ImportFileHandler;
+use LeadingSystems\MerconisCustomStarterbaseBundle\Scheduler\Traits\SchedulableTrait;
 
 abstract class ImporterBase {
     use SchedulableTrait;

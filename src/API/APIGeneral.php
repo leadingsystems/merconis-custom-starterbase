@@ -1,5 +1,5 @@
 <?php
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\API;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\API;
 
 use Contao\System;
 
@@ -45,7 +45,7 @@ class APIGeneral
         $orderId = \Input::get('orderId') ?? null;
 
         try {
-            $orderDistributor = System::getContainer()->get('LeadingSystems\MerconisCustomHoehenflugBundle\Order\Distributor\Distributor');
+            $orderDistributor = System::getContainer()->get('LeadingSystems\MerconisCustomStarterbaseBundle\Order\Distributor\Distributor');
             $orderDistributor->distribute($orderId);
 
             $this->obj_apiReceiver->success();
@@ -58,7 +58,7 @@ class APIGeneral
 
     protected function apiResource_hotwireSchedulerDispatcher()
     {
-        $schedulerDispatcher = System::getContainer()->get('LeadingSystems\MerconisCustomHoehenflugBundle\Scheduler\SchedulerDispatcher');
+        $schedulerDispatcher = System::getContainer()->get('LeadingSystems\MerconisCustomStarterbaseBundle\Scheduler\SchedulerDispatcher');
         $schedulerDispatcher->dispatch(true);
 
         $this->obj_apiReceiver->success();

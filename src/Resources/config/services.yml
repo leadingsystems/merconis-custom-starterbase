@@ -6,36 +6,36 @@ services:
     public: false
 
   _instanceof:
-    LeadingSystems\MerconisCustomHoehenflugBundle\Order\Exporter\ExporterInterface:
+    LeadingSystems\MerconisCustomStarterbaseBundle\Order\Exporter\ExporterInterface:
       tags: ['merconis_custom.exporters.order']
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\Display\Product\Pictures\Pictures:
+  LeadingSystems\MerconisCustomStarterbaseBundle\Display\Product\Pictures\Pictures:
     public: true
     autowire: false
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\Display\Filter\Helper\Helper:
+  LeadingSystems\MerconisCustomStarterbaseBundle\Display\Filter\Helper\Helper:
     public: true
     autowire: false
     arguments:
-      - '@LeadingSystems\MerconisCustomHoehenflugBundle\Display\Common\Helper\Helper'
+      - '@LeadingSystems\MerconisCustomStarterbaseBundle\Display\Common\Helper\Helper'
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\Display\Common\Helper\Helper:
+  LeadingSystems\MerconisCustomStarterbaseBundle\Display\Common\Helper\Helper:
     public: true
     autowire: false
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\Cronjob\CronDispatcher:
+  LeadingSystems\MerconisCustomStarterbaseBundle\Cronjob\CronDispatcher:
     arguments:
-      - '@LeadingSystems\MerconisCustomHoehenflugBundle\Scheduler\SchedulerDispatcher'
+      - '@LeadingSystems\MerconisCustomStarterbaseBundle\Scheduler\SchedulerDispatcher'
     tags:
       - { name: contao.cronjob, interval: minutely, method: dispatchScheduler }
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\Scheduler\SchedulerDispatcher:
+  LeadingSystems\MerconisCustomStarterbaseBundle\Scheduler\SchedulerDispatcher:
     # must only be public during development so that it can be used in apiResource_hotwireSchedulerDispatcher
     public: true
     arguments:
       - !tagged_iterator merconis_custom.schedulable
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\Scheduler\Helpers\DCACallbackHelper:
+  LeadingSystems\MerconisCustomStarterbaseBundle\Scheduler\Helpers\DCACallbackHelper:
     arguments:
       - !tagged_iterator merconis_custom.schedulable
     tags:
@@ -43,38 +43,38 @@ services:
       - { name: contao.callback, table: tl_merconis_custom_scheduler_job, target: fields.cronExpression.save, method: cronExpressionBackendFieldValidation }
       - { name: contao.callback, table: tl_merconis_custom_scheduler_job, target: list.label.label, method: getSchedulerJobBackendListLabel }
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\EventListener\TerminateListener:
+  LeadingSystems\MerconisCustomStarterbaseBundle\EventListener\TerminateListener:
     arguments:
-      - '@LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\CategoryManager\CategoryManager'
+      - '@LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\CategoryManager\CategoryManager'
     tags:
       - kernel.event_listener
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\ProductManager\ProductManager:
+  LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\ProductManager\ProductManager:
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\CategoryManager\CategoryManager:
+  LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\CategoryManager\CategoryManager:
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\AttributeManager\AttributeManager:
+  LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\AttributeManager\AttributeManager:
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\FilterFieldManager\FilterFieldManager:
+  LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\FilterFieldManager\FilterFieldManager:
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\BatchInsertUpdate\Batch:
+  LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\BatchInsertUpdate\Batch:
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\BatchInsertUpdate\BatchInsertUpdate:
+  LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\BatchInsertUpdate\BatchInsertUpdate:
     arguments:
-      - '@LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\BatchInsertUpdate\Batch'
+      - '@LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\BatchInsertUpdate\Batch'
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\BatchInsertUpdate\EventListener\TerminateListener:
+  LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\BatchInsertUpdate\EventListener\TerminateListener:
     arguments:
-      - '@LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\BatchInsertUpdate\BatchInsertUpdate'
+      - '@LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\BatchInsertUpdate\BatchInsertUpdate'
     tags:
       - kernel.event_listener
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\ImportFileHandler\ImportFileHandler:
+  LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\ImportFileHandler:
     shared: false
     arguments:
       - '%kernel.project_dir%'
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\Order\Distributor\Distributor:
+  LeadingSystems\MerconisCustomStarterbaseBundle\Order\Distributor\Distributor:
     # must be public because we have to use it in Merconis legacy code where we can't inject it properly
     public: true
     shared: false
@@ -83,28 +83,28 @@ services:
       - '%kernel.project_dir%'
 
   # Order exporter services, auto tagged with _instanceof, therefore depending on implementing ExporterInterface -->
-  LeadingSystems\MerconisCustomHoehenflugBundle\Order\Exporter\Cash\Zentrallager\Exporter:
+  LeadingSystems\MerconisCustomStarterbaseBundle\Order\Exporter\Cash\Zentrallager\Exporter:
     arguments:
       - '%kernel.project_dir%'
       - '@slugger'
 
   # Schedulable services -->
-  LeadingSystems\MerconisCustomHoehenflugBundle\Importer\Cash\ArticleConditionZentrallager\Processor:
+  LeadingSystems\MerconisCustomStarterbaseBundle\Importer\Cash\ArticleConditionZentrallager\Processor:
     arguments:
-      - '@LeadingSystems\MerconisCustomHoehenflugBundle\ImportFileHandler\ImportFileHandler'
-      - '@LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\BatchInsertUpdate\BatchInsertUpdate'
+      - '@LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\ImportFileHandler'
+      - '@LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\BatchInsertUpdate\BatchInsertUpdate'
     tags:
       - { name: merconis_custom.schedulable }
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\Importer\Cash\ArticleConditionZentrallager\Validator:
+  LeadingSystems\MerconisCustomStarterbaseBundle\Importer\Cash\ArticleConditionZentrallager\Validator:
     arguments:
-      - '@LeadingSystems\MerconisCustomHoehenflugBundle\ImportFileHandler\ImportFileHandler'
+      - '@LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\ImportFileHandler'
     tags:
       - { name: merconis_custom.schedulable }
 
-  LeadingSystems\MerconisCustomHoehenflugBundle\Importer\Misc\FilterFields\Processor:
+  LeadingSystems\MerconisCustomStarterbaseBundle\Importer\Misc\FilterFields\Processor:
     arguments:
-      - '@LeadingSystems\MerconisCustomHoehenflugBundle\ImportFileHandler\ImportFileHandler'
-      - '@LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\FilterFieldManager\FilterFieldManager'
+      - '@LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\ImportFileHandler'
+      - '@LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\FilterFieldManager\FilterFieldManager'
     tags:
       - { name: merconis_custom.schedulable }

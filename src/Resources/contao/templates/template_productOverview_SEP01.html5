@@ -1,7 +1,7 @@
 <?php
-    $displayProductHelper = Contao\System::getContainer()->get('LeadingSystems\MerconisCustomHoehenflugBundle\Display\Product\Helper\Helper');
+    $displayProductHelper = Contao\System::getContainer()->get('LeadingSystems\MerconisCustomStarterbaseBundle\Display\Product\Helper\Helper');
 
-    $picturesFactory = Contao\System::getContainer()->get('LeadingSystems\MerconisCustomHoehenflugBundle\Display\Product\Pictures\Pictures');
+    $picturesFactory = Contao\System::getContainer()->get('LeadingSystems\MerconisCustomStarterbaseBundle\Display\Product\Pictures\Pictures');
     $pictures = $picturesFactory->create($this->objProduct);
 
 	// use this to show the available output options:

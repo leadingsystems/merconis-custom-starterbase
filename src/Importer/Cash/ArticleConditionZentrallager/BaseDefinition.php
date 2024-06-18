@@ -1,10 +1,10 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\Importer\Cash\ArticleConditionZentrallager;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\Importer\Cash\ArticleConditionZentrallager;
 
-use LeadingSystems\MerconisCustomHoehenflugBundle\Importer\ImporterBase;
-use LeadingSystems\MerconisCustomHoehenflugBundle\ImportFileHandler\Enum\Mode;
-use LeadingSystems\MerconisCustomHoehenflugBundle\ImportFileHandler\ImportFileHandler;
+use LeadingSystems\MerconisCustomStarterbaseBundle\Importer\ImporterBase;
+use LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\Enum\Mode;
+use LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\ImportFileHandler;
 
 abstract class BaseDefinition extends ImporterBase
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\EventListener;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\EventListener;
 
-use LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\CategoryManager\CategoryManager;
+use LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\CategoryManager\CategoryManager;
 use Symfony\Component\HttpKernel\Event\TerminateEvent;
 
 class TerminateListener

@@ -1,6 +1,6 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\DependencyInjection;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
  *
  * @author Leading Systems GmbH
  */
-class LeadingSystemsMerconisCustomHoehenflugExtension extends Extension
+class LeadingSystemsMerconisCustomStarterbaseExtension extends Extension
 {
 	/**
 	 * {@inheritdoc}

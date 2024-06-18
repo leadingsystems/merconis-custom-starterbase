@@ -1,11 +1,11 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\Importer\Cash\ArticleConditionZentrallager;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\Importer\Cash\ArticleConditionZentrallager;
 
-use LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\BatchInsertUpdate\Batch;
-use LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\BatchInsertUpdate\BatchInsertUpdate;
-use LeadingSystems\MerconisCustomHoehenflugBundle\Importer\ImporterBase;
-use LeadingSystems\MerconisCustomHoehenflugBundle\ImportFileHandler\ImportFileHandler;
+use LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\BatchInsertUpdate\Batch;
+use LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\BatchInsertUpdate\BatchInsertUpdate;
+use LeadingSystems\MerconisCustomStarterbaseBundle\Importer\ImporterBase;
+use LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\ImportFileHandler;
 
 class Processor extends BaseDefinition
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\AttributeManager;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\AttributeManager;
 
 class AttributeManager
 {

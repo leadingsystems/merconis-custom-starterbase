@@ -1,6 +1,6 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\CategoryManager;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\CategoryManager;
 
 class CategoryManager
 {

@@ -1,5 +1,5 @@
 <?php
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\Scheduler\Models;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\Scheduler\Models;
 
 use Contao\Model;
 

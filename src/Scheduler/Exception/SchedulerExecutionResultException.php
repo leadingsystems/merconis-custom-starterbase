@@ -1,6 +1,6 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\Scheduler\Exception;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\Scheduler\Exception;
 
 class SchedulerExecutionResultException extends \Exception
 {

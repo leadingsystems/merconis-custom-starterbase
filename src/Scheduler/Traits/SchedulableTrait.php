@@ -1,5 +1,5 @@
 <?php
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\Scheduler\Traits;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\Scheduler\Traits;
 
 trait SchedulableTrait {
     protected string $executionResultMessage = '';

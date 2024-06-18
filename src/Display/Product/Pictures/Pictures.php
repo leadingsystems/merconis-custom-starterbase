@@ -1,6 +1,6 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\Display\Product\Pictures;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\Display\Product\Pictures;
 
 use Contao\System;
 use Merconis\Core\ls_shop_product;
@@ -89,7 +89,7 @@ class Pictures
          * Do me! Our factories must be rewritten in a way that allows them to receive other services through
              * proper DI. Using getContainer() ist just a quick workaround.
          */
-        $dataFactory = System::getContainer()->get('LeadingSystems\MerconisCustomHoehenflugBundle\Display\Product\Data\Data');
+        $dataFactory = System::getContainer()->get('LeadingSystems\MerconisCustomStarterbaseBundle\Display\Product\Data\Data');
         $data = $dataFactory->create($this->product);
         $productCodeWithoutSKPrefix = $data->getProductCode();
         $dbres_productPictures = \Database::getInstance()

@@ -1,6 +1,6 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\Display\Filter\Helper;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\Display\Filter\Helper;
 
 class Helper
 {

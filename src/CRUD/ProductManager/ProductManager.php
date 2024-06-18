@@ -1,6 +1,6 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\ProductManager;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\ProductManager;
 
 use Merconis\Core\ls_shop_generalHelper;
 use Merconis\Core\ls_shop_productManagementApiHelper;

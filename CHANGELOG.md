@@ -1,2 +1,2 @@
-Leading Systems Merconis Custom Hoehenflug changelog
+Leading Systems Merconis Custom Starterbase changelog
 ===========================================

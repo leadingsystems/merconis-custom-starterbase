@@ -1,6 +1,6 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\Display\Product\Pictures;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\Display\Product\Pictures;
 
 class Picture
 {

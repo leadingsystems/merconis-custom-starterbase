@@ -1,8 +1,8 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\BatchInsertUpdate\EventListener;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\BatchInsertUpdate\EventListener;
 
-use LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\BatchInsertUpdate\BatchInsertUpdate;
+use LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\BatchInsertUpdate\BatchInsertUpdate;
 use Symfony\Component\HttpKernel\Event\TerminateEvent;
 
 class TerminateListener

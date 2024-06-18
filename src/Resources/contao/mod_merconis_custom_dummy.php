@@ -1,6 +1,6 @@
 <?php
 
-namespace Merconis\CustomHoehenflug;
+namespace Merconis\CustomStarterbase;
 
 class mod_merconis_custom_dummy extends \Module {
 	public function generate() {

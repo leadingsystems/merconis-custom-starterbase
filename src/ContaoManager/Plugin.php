@@ -1,6 +1,6 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\ContaoManager;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\ContaoManager;
 
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
@@ -19,7 +19,7 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create('LeadingSystems\MerconisCustomHoehenflugBundle\LeadingSystemsMerconisCustomHoehenflugBundle')
+            BundleConfig::create('LeadingSystems\MerconisCustomStarterbaseBundle\LeadingSystemsMerconisCustomStarterbaseBundle')
                 ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle'])
         ];
     }

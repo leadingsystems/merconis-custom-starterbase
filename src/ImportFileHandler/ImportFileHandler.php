@@ -1,10 +1,10 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\ImportFileHandler;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler;
 
 use Contao\Database;
-use LeadingSystems\MerconisCustomHoehenflugBundle\ImportFileHandler\Enum\Mode;
-use LeadingSystems\MerconisCustomHoehenflugBundle\ImportFileHandler\Enum\ProgressMemoryMode;
+use LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\Enum\Mode;
+use LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\Enum\ProgressMemoryMode;
 use Merconis\Core\ls_shop_singularStorage;
 use SimpleXMLElement;
 use SplFileObject;

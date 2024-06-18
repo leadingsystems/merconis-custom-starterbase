@@ -1,11 +1,11 @@
 <?php
-namespace Merconis\CustomHoehenflug;
+namespace Merconis\CustomStarterbase;
 
 class merconis_custom_helper
 {
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['getProductData_priceCheapestVariantBeforeTax'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_getProductData_priceCheapestVariantBeforeTax');
+     * $GLOBALS['MERCONIS_HOOKS']['getProductData_priceCheapestVariantBeforeTax'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_getProductData_priceCheapestVariantBeforeTax');
      *
      * -- Invocation: --
      * When Merconis determines the price of the cheapest product variant
@@ -37,7 +37,7 @@ class merconis_custom_helper
 	
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['getProductData_unscaledPriceCheapestVariantBeforeTax'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_getProductData_unscaledPriceCheapestVariantBeforeTax');
+     * $GLOBALS['MERCONIS_HOOKS']['getProductData_unscaledPriceCheapestVariantBeforeTax'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_getProductData_unscaledPriceCheapestVariantBeforeTax');
      *
      * -- Invocation: --
      * When Merconis determines the price of the cheapest unscaled product variant
@@ -69,7 +69,7 @@ class merconis_custom_helper
 	
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['checkIfCacheCanBeUsed'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_checkIfCacheCanBeUsed');
+     * $GLOBALS['MERCONIS_HOOKS']['checkIfCacheCanBeUsed'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_checkIfCacheCanBeUsed');
      *
      * -- Invocation: --
      * When Merconis checks whether a product search must actually be performed or whether a previous search result
@@ -97,7 +97,7 @@ class merconis_custom_helper
 	
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['preparingOrderDataToStore'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_preparingOrderDataToStore');
+     * $GLOBALS['MERCONIS_HOOKS']['preparingOrderDataToStore'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_preparingOrderDataToStore');
      *
      * -- Invocation: --
      * When the order data is prepared to be stored in the database
@@ -122,7 +122,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['replaceWidgetTemplateForReview'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_replaceWidgetTemplateForReview');
+     * $GLOBALS['MERCONIS_HOOKS']['replaceWidgetTemplateForReview'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_replaceWidgetTemplateForReview');
      *
      * -- Invocation: --
      * When a form field is rendered while creating an automatic form review
@@ -152,7 +152,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['storeCartItemInOrder'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_storeCartItemInOrder');
+     * $GLOBALS['MERCONIS_HOOKS']['storeCartItemInOrder'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_storeCartItemInOrder');
      *
      * -- Invocation: --
      * When the order is being created during checkout and a cart item is written
@@ -187,7 +187,7 @@ class merconis_custom_helper
 	
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['afterProductSearchBeforeFilter'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_afterProductSearchBeforeFilter');
+     * $GLOBALS['MERCONIS_HOOKS']['afterProductSearchBeforeFilter'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_afterProductSearchBeforeFilter');
      *
      * -- Invocation: --
      * After a product search has been performed and before the resulting product list is filtered.
@@ -228,7 +228,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['beforeProductlistOutputBeforePagination'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_beforeProductlistOutputBeforePagination');
+     * $GLOBALS['MERCONIS_HOOKS']['beforeProductlistOutputBeforePagination'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_beforeProductlistOutputBeforePagination');
      *
      * -- Invocation: --
      * Before a product list is rendered and before the pagination is created.
@@ -274,7 +274,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['customAjaxHook'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_customAjaxHook');
+     * $GLOBALS['MERCONIS_HOOKS']['customAjaxHook'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_customAjaxHook');
      *
      * -- Invocation: --
      * When the "_hookedFunction" magic method is called on a product or variant object
@@ -312,7 +312,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['callingHookedProductOrVariantFunction'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_callingHookedProductOrVariantFunction');
+     * $GLOBALS['MERCONIS_HOOKS']['callingHookedProductOrVariantFunction'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_callingHookedProductOrVariantFunction');
      *
      * -- Invocation: --
      * When the "_hookedFunction" magic method is called on a product or variant object
@@ -339,7 +339,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['prepareProductTemplate'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_prepareProductTemplate');
+     * $GLOBALS['MERCONIS_HOOKS']['prepareProductTemplate'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_prepareProductTemplate');
      *
      * -- Invocation: --
      * When the product template is prepared
@@ -365,7 +365,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['onReceivingConfiguratorInput'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_onReceivingConfiguratorInput');
+     * $GLOBALS['MERCONIS_HOOKS']['onReceivingConfiguratorInput'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_onReceivingConfiguratorInput');
      *
      * -- Invocation: --
      * When currently received configurator input is being processed
@@ -389,7 +389,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['manipulateProductOrVariantData'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_manipulateProductOrVariantData');
+     * $GLOBALS['MERCONIS_HOOKS']['manipulateProductOrVariantData'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_manipulateProductOrVariantData');
      *
      * -- Invocation: --
      * Directly after the product or variant data is retrieved from the database
@@ -415,7 +415,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['modifyPaymentModuleTypes'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_modifyPaymentModuleTypes');
+     * $GLOBALS['MERCONIS_HOOKS']['modifyPaymentModuleTypes'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_modifyPaymentModuleTypes');
      *
      * -- Invocation: --
      * When initializing the payment module system
@@ -440,7 +440,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['import_begin'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_import_begin');
+     * $GLOBALS['MERCONIS_HOOKS']['import_begin'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_import_begin');
      *
      * -- Invocation: --
      * When a new product import starts
@@ -464,7 +464,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['import_finished'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_import_finished');
+     * $GLOBALS['MERCONIS_HOOKS']['import_finished'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_import_finished');
      *
      * -- Invocation: --
      * When the product import is finished
@@ -488,7 +488,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['import_beforeProcessingProductData'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_import_beforeProcessingProductData');
+     * $GLOBALS['MERCONIS_HOOKS']['import_beforeProcessingProductData'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_import_beforeProcessingProductData');
      *
      * -- Invocation: --
      * Before a single product's raw data from the import file is processed
@@ -513,7 +513,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['import_beforeWritingProductData'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_import_beforeWritingProductData');
+     * $GLOBALS['MERCONIS_HOOKS']['import_beforeWritingProductData'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_import_beforeWritingProductData');
      *
      * -- Invocation: --
      * Before a single product's processed data is written to the database
@@ -539,7 +539,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['import_afterUpdatingProductData'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_import_afterUpdatingProductData');
+     * $GLOBALS['MERCONIS_HOOKS']['import_afterUpdatingProductData'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_import_afterUpdatingProductData');
      *
      * -- Invocation: --
      * After the product data of an already existing product has been updated in the database
@@ -563,7 +563,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['import_afterInsertingProductData'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_import_afterInsertingProductData');
+     * $GLOBALS['MERCONIS_HOOKS']['import_afterInsertingProductData'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_import_afterInsertingProductData');
      *
      * -- Invocation: --
      * After the product data of a new product has been inserted into the database
@@ -587,7 +587,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['import_beforeProcessingVariantData'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_import_beforeProcessingVariantData');
+     * $GLOBALS['MERCONIS_HOOKS']['import_beforeProcessingVariantData'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_import_beforeProcessingVariantData');
      *
      * -- Invocation: --
      * Before a single variant's raw data from the import file is processed
@@ -612,7 +612,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['import_beforeWritingVariantData'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_import_beforeWritingVariantData');
+     * $GLOBALS['MERCONIS_HOOKS']['import_beforeWritingVariantData'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_import_beforeWritingVariantData');
      *
      * -- Invocation: --
      * Before a single variant's processed data is written to the database
@@ -639,7 +639,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['import_afterUpdatingVariantData'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_import_afterUpdatingVariantData');
+     * $GLOBALS['MERCONIS_HOOKS']['import_afterUpdatingVariantData'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_import_afterUpdatingVariantData');
      *
      * -- Invocation: --
      * After the variant data of an already existing variant has been updated in the database
@@ -663,7 +663,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['import_afterInsertingVariantData'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_import_afterInsertingVariantData');
+     * $GLOBALS['MERCONIS_HOOKS']['import_afterInsertingVariantData'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_import_afterInsertingVariantData');
      *
      * -- Invocation: --
      * After the variant data of a new variant has been inserted into the database
@@ -687,7 +687,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['import_beforeProcessingProductLanguageData'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_import_beforeProcessingProductLanguageData');
+     * $GLOBALS['MERCONIS_HOOKS']['import_beforeProcessingProductLanguageData'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_import_beforeProcessingProductLanguageData');
      *
      * -- Invocation: --
      * Before a single product language data row is processed
@@ -709,7 +709,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['import_beforeWritingProductLanguageData'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_import_beforeWritingProductLanguageData');
+     * $GLOBALS['MERCONIS_HOOKS']['import_beforeWritingProductLanguageData'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_import_beforeWritingProductLanguageData');
      *
      * -- Invocation: --
      * Before a single already processed product language data row is processed
@@ -732,7 +732,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['import_afterWritingProductLanguageData'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_import_afterWritingProductLanguageData');
+     * $GLOBALS['MERCONIS_HOOKS']['import_afterWritingProductLanguageData'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_import_afterWritingProductLanguageData');
      *
      * -- Invocation: --
      * Before a single already processed product language data row is processed
@@ -753,7 +753,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['import_beforeProcessingVariantLanguageData'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_import_beforeProcessingVariantLanguageData');
+     * $GLOBALS['MERCONIS_HOOKS']['import_beforeProcessingVariantLanguageData'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_import_beforeProcessingVariantLanguageData');
      *
      * -- Invocation: --
      * Before a single variant language data row is processed
@@ -775,7 +775,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['import_beforeWritingVariantLanguageData'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_import_beforeWritingVariantLanguageData');
+     * $GLOBALS['MERCONIS_HOOKS']['import_beforeWritingVariantLanguageData'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_import_beforeWritingVariantLanguageData');
      *
      * -- Invocation: --
      * Before a single already processed product language data row is processed
@@ -798,7 +798,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['import_afterWritingVariantLanguageData'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_import_afterWritingVariantLanguageData');
+     * $GLOBALS['MERCONIS_HOOKS']['import_afterWritingVariantLanguageData'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_import_afterWritingVariantLanguageData');
      *
      * -- Invocation: --
      * Before a single already processed product language data row is processed
@@ -822,7 +822,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['beforeSendingOrderMessage'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_beforeSendingOrderMessage');
+     * $GLOBALS['MERCONIS_HOOKS']['beforeSendingOrderMessage'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_beforeSendingOrderMessage');
      *
      * -- Invocation: --
      * Before sending an order message
@@ -875,7 +875,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['beforeAddToCart'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_beforeAddToCart');
+     * $GLOBALS['MERCONIS_HOOKS']['beforeAddToCart'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_beforeAddToCart');
      *
      * -- Invocation: --
      * Before adding a new cart item to the cart
@@ -905,7 +905,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['getScalePriceQuantity'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_getScalePriceQuantity');
+     * $GLOBALS['MERCONIS_HOOKS']['getScalePriceQuantity'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_getScalePriceQuantity');
      *
      * -- Invocation: --
      * When detecting the quantity used for the following scale price calculation
@@ -957,7 +957,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['calculateScaledPrice'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_calculateScaledPrice');
+     * $GLOBALS['MERCONIS_HOOKS']['calculateScaledPrice'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_calculateScaledPrice');
      *
      * -- Invocation: --
      * When calculating the scaled price for a product.
@@ -990,7 +990,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['afterCheckout'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_afterCheckout');
+     * $GLOBALS['MERCONIS_HOOKS']['afterCheckout'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_afterCheckout');
      *
      * -- Invocation: --
      * Right after the order has been finished.
@@ -1014,7 +1014,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['beforeAjaxSearch'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_beforeAjaxSearch');
+     * $GLOBALS['MERCONIS_HOOKS']['beforeAjaxSearch'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_beforeAjaxSearch');
      *
      * -- Invocation: --
      * Before an ajax search is performed.
@@ -1042,7 +1042,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['afterAjaxSearch'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_afterAjaxSearch');
+     * $GLOBALS['MERCONIS_HOOKS']['afterAjaxSearch'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_afterAjaxSearch');
      *
      * -- Invocation: --
      * After an ajax search has been performed.
@@ -1084,7 +1084,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['beforeSearch'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_beforeSearch');
+     * $GLOBALS['MERCONIS_HOOKS']['beforeSearch'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_beforeSearch');
      *
      * -- Invocation: --
      * Before a search is performed.
@@ -1112,7 +1112,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['afterSearch'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_afterSearch');
+     * $GLOBALS['MERCONIS_HOOKS']['afterSearch'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_afterSearch');
      *
      * -- Invocation: --
      * After a search has been performed.
@@ -1154,7 +1154,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['beforeProductlistOutput'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_beforeProductlistOutput');
+     * $GLOBALS['MERCONIS_HOOKS']['beforeProductlistOutput'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_beforeProductlistOutput');
      *
      * -- Invocation: --
      * Before a product list is rendered.
@@ -1197,7 +1197,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['beforeProductSingleviewOutput'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_beforeProductSingleviewOutput');
+     * $GLOBALS['MERCONIS_HOOKS']['beforeProductSingleviewOutput'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_beforeProductSingleviewOutput');
      *
      * -- Invocation: --
      * Before a product is displayed in the singleview.
@@ -1220,7 +1220,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['addToCart'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_addToCart');
+     * $GLOBALS['MERCONIS_HOOKS']['addToCart'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_addToCart');
      *
      * -- Invocation: --
      * After a product has been put into the cart
@@ -1245,7 +1245,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['beforeRedirectionToSeparateDataEntryPage'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_beforeRedirectionToSeparateDataEntryPage');
+     * $GLOBALS['MERCONIS_HOOKS']['beforeRedirectionToSeparateDataEntryPage'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_beforeRedirectionToSeparateDataEntryPage');
      *
      * -- Invocation: --
      * Before the user is redirected to the separate data entry page
@@ -1268,7 +1268,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['beforeRedirectionBackToCart'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_beforeRedirectionBackToCart');
+     * $GLOBALS['MERCONIS_HOOKS']['beforeRedirectionBackToCart'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_beforeRedirectionBackToCart');
      *
      * -- Invocation: --
      * Before the user is redirected back to the cart
@@ -1291,7 +1291,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['beforeRedirectionToReviewOrderPage'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_beforeRedirectionToReviewOrderPage');
+     * $GLOBALS['MERCONIS_HOOKS']['beforeRedirectionToReviewOrderPage'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_beforeRedirectionToReviewOrderPage');
      *
      * -- Invocation: --
      * Before the user is redirected to the order review page
@@ -1314,7 +1314,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['paymentOptionSelected'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_paymentOptionSelected');
+     * $GLOBALS['MERCONIS_HOOKS']['paymentOptionSelected'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_paymentOptionSelected');
      *
      * -- Invocation: --
      * When the user selects a payment method
@@ -1337,7 +1337,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['shippingOptionSelected'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_shippingOptionSelected');
+     * $GLOBALS['MERCONIS_HOOKS']['shippingOptionSelected'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_shippingOptionSelected');
      *
      * -- Invocation: --
      * When the user selects a shipping method
@@ -1360,7 +1360,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['initializeCartController'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_initializeCartController');
+     * $GLOBALS['MERCONIS_HOOKS']['initializeCartController'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_initializeCartController');
      *
      * -- Invocation: --
      * When the cart controller is initialized
@@ -1447,7 +1447,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['modifyPaymentOrShippingMethodInfo'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_modifyPaymentOrShippingMethodInfo');
+     * $GLOBALS['MERCONIS_HOOKS']['modifyPaymentOrShippingMethodInfo'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_modifyPaymentOrShippingMethodInfo');
      *
      * -- Invocation: --
      * After the method info has been processed and before the method info is used by other functions
@@ -1547,7 +1547,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['checkIfPaymentOrShippingMethodIsAllowed'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_checkIfPaymentOrShippingMethodIsAllowed');
+     * $GLOBALS['MERCONIS_HOOKS']['checkIfPaymentOrShippingMethodIsAllowed'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_checkIfPaymentOrShippingMethodIsAllowed');
      *
      * -- Invocation: --
      * When it's checked whether a payment or shipping method is allowed. If one
@@ -1613,7 +1613,7 @@ class merconis_custom_helper
 
     /*
      * -- Registration: --
-     * $GLOBALS['MERCONIS_HOOKS']['sortPaymentOrShippingMethods'][] = array('Merconis\CustomHoehenflug\merconis_custom_helper', 'merconis_hook_sortPaymentOrShippingMethods');
+     * $GLOBALS['MERCONIS_HOOKS']['sortPaymentOrShippingMethods'][] = array('Merconis\CustomStarterbase\merconis_custom_helper', 'merconis_hook_sortPaymentOrShippingMethods');
      *
      * -- Invocation: --
      * After the allowed payment or shipping methods have been determined

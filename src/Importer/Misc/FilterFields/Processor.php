@@ -1,11 +1,11 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\Importer\Misc\FilterFields;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\Importer\Misc\FilterFields;
 
-use LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\FilterFieldManager\FilterFieldManager;
-use LeadingSystems\MerconisCustomHoehenflugBundle\Importer\ImporterBase;
-use LeadingSystems\MerconisCustomHoehenflugBundle\ImportFileHandler\Enum\Mode;
-use LeadingSystems\MerconisCustomHoehenflugBundle\ImportFileHandler\ImportFileHandler;
+use LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\FilterFieldManager\FilterFieldManager;
+use LeadingSystems\MerconisCustomStarterbaseBundle\Importer\ImporterBase;
+use LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\Enum\Mode;
+use LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\ImportFileHandler;
 
 class Processor extends ImporterBase
 {

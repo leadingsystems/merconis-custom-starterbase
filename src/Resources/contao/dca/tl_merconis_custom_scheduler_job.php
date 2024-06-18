@@ -1,6 +1,6 @@
 <?php
 
-namespace Merconis\CustomHoehenflug;
+namespace Merconis\CustomStarterbase;
 
 use Contao\Backend;
 use Contao\BackendUser;

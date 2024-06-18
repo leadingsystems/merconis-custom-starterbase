@@ -1,6 +1,6 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
@@ -9,6 +9,6 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  *
  * @author Leading Systems GmbH
  */
-class LeadingSystemsMerconisCustomHoehenflugBundle extends Bundle
+class LeadingSystemsMerconisCustomStarterbaseBundle extends Bundle
 {
 }

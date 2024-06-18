@@ -1,6 +1,6 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\ImportFileHandler\Enum;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\Enum;
 
 enum ProgressMemoryMode
 {

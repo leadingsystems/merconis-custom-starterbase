@@ -1,8 +1,8 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\Importer\Cash\ArticleConditionZentrallager;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\Importer\Cash\ArticleConditionZentrallager;
 
-use LeadingSystems\MerconisCustomHoehenflugBundle\Importer\ImporterBase;
+use LeadingSystems\MerconisCustomStarterbaseBundle\Importer\ImporterBase;
 
 class Validator extends BaseDefinition
 {

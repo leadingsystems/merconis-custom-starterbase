@@ -1,11 +1,11 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\Scheduler;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\Scheduler;
 
 use Cron\CronExpression;
-use LeadingSystems\MerconisCustomHoehenflugBundle\Scheduler\Exception\SchedulerExecutionResultException;
-use LeadingSystems\MerconisCustomHoehenflugBundle\Scheduler\Models\SchedulerJobModel;
-use LeadingSystems\MerconisCustomHoehenflugBundle\Scheduler\Traits\SchedulableTrait;
+use LeadingSystems\MerconisCustomStarterbaseBundle\Scheduler\Exception\SchedulerExecutionResultException;
+use LeadingSystems\MerconisCustomStarterbaseBundle\Scheduler\Models\SchedulerJobModel;
+use LeadingSystems\MerconisCustomStarterbaseBundle\Scheduler\Traits\SchedulableTrait;
 
 class SchedulerDispatcher
 {

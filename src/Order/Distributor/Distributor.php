@@ -1,9 +1,9 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\Order\Distributor;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\Order\Distributor;
 
-use LeadingSystems\MerconisCustomHoehenflugBundle\Order\Enum\OrderType;
-use LeadingSystems\MerconisCustomHoehenflugBundle\Order\Exporter\ExporterInterface;
+use LeadingSystems\MerconisCustomStarterbaseBundle\Order\Enum\OrderType;
+use LeadingSystems\MerconisCustomStarterbaseBundle\Order\Exporter\ExporterInterface;
 use Merconis\Core\ls_shop_generalHelper;
 
 class Distributor

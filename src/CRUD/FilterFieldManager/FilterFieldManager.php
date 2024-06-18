@@ -1,6 +1,6 @@
 <?php
 
-namespace LeadingSystems\MerconisCustomHoehenflugBundle\CRUD\FilterFieldManager;
+namespace LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\FilterFieldManager;
 
 class FilterFieldManager
 {
