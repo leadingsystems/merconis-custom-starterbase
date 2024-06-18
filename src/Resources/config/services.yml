@@ -21,6 +21,14 @@ services:
     arguments:
       - !tagged_iterator merconis_custom.schedulable
 
+  LeadingSystems\MerconisCustomStarterbaseBundle\Scheduler\Helpers\DCACallbackHelper:
+    arguments:
+      - !tagged_iterator merconis_custom.schedulable
+    tags:
+      - { name: contao.callback, table: tl_merconis_custom_scheduler_job, target: fields.scriptToExecute.options, method: getScriptsForSchedulerExecutionAsOptions }
+      - { name: contao.callback, table: tl_merconis_custom_scheduler_job, target: fields.cronExpression.save, method: cronExpressionBackendFieldValidation }
+      - { name: contao.callback, table: tl_merconis_custom_scheduler_job, target: list.label.label, method: getSchedulerJobBackendListLabel }
+
   # Schedulable services -->
   LeadingSystems\MerconisCustomStarterbaseBundle\Dummy\DummySchedulable:
     tags:
