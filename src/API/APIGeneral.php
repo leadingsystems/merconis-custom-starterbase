@@ -40,22 +40,6 @@ class APIGeneral
         }
     }
 
-    protected function apiResource_hotwireOrderDistributor()
-    {
-        $orderId = \Input::get('orderId') ?? null;
-
-        try {
-            $orderDistributor = System::getContainer()->get('LeadingSystems\MerconisCustomStarterbaseBundle\Order\Distributor\Distributor');
-            $orderDistributor->distribute($orderId);
-
-            $this->obj_apiReceiver->success();
-            $this->obj_apiReceiver->set_data('Test: ' . __METHOD__);
-        } catch (\Throwable $e) {
-            $this->obj_apiReceiver->error();
-            $this->obj_apiReceiver->set_message($e->getMessage());
-        }
-    }
-
     protected function apiResource_hotwireSchedulerDispatcher()
     {
         $schedulerDispatcher = System::getContainer()->get('LeadingSystems\MerconisCustomStarterbaseBundle\Scheduler\SchedulerDispatcher');

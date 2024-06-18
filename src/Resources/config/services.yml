@@ -5,20 +5,6 @@ services:
     autoconfigure: true
     public: false
 
-  _instanceof:
-    LeadingSystems\MerconisCustomStarterbaseBundle\Order\Exporter\ExporterInterface:
-      tags: ['merconis_custom.exporters.order']
-
-  LeadingSystems\MerconisCustomStarterbaseBundle\Display\Product\Pictures\Pictures:
-    public: true
-    autowire: false
-
-  LeadingSystems\MerconisCustomStarterbaseBundle\Display\Filter\Helper\Helper:
-    public: true
-    autowire: false
-    arguments:
-      - '@LeadingSystems\MerconisCustomStarterbaseBundle\Display\Common\Helper\Helper'
-
   LeadingSystems\MerconisCustomStarterbaseBundle\Display\Common\Helper\Helper:
     public: true
     autowire: false
@@ -35,76 +21,9 @@ services:
     arguments:
       - !tagged_iterator merconis_custom.schedulable
 
-  LeadingSystems\MerconisCustomStarterbaseBundle\Scheduler\Helpers\DCACallbackHelper:
-    arguments:
-      - !tagged_iterator merconis_custom.schedulable
-    tags:
-      - { name: contao.callback, table: tl_merconis_custom_scheduler_job, target: fields.scriptToExecute.options, method: getScriptsForSchedulerExecutionAsOptions }
-      - { name: contao.callback, table: tl_merconis_custom_scheduler_job, target: fields.cronExpression.save, method: cronExpressionBackendFieldValidation }
-      - { name: contao.callback, table: tl_merconis_custom_scheduler_job, target: list.label.label, method: getSchedulerJobBackendListLabel }
-
-  LeadingSystems\MerconisCustomStarterbaseBundle\EventListener\TerminateListener:
-    arguments:
-      - '@LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\CategoryManager\CategoryManager'
-    tags:
-      - kernel.event_listener
-
-  LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\ProductManager\ProductManager:
-
-  LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\CategoryManager\CategoryManager:
-
-  LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\AttributeManager\AttributeManager:
-
-  LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\FilterFieldManager\FilterFieldManager:
-
-  LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\BatchInsertUpdate\Batch:
-
-  LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\BatchInsertUpdate\BatchInsertUpdate:
-    arguments:
-      - '@LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\BatchInsertUpdate\Batch'
-
-  LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\BatchInsertUpdate\EventListener\TerminateListener:
-    arguments:
-      - '@LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\BatchInsertUpdate\BatchInsertUpdate'
-    tags:
-      - kernel.event_listener
-
-  LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\ImportFileHandler:
-    shared: false
-    arguments:
-      - '%kernel.project_dir%'
-
-  LeadingSystems\MerconisCustomStarterbaseBundle\Order\Distributor\Distributor:
-    # must be public because we have to use it in Merconis legacy code where we can't inject it properly
-    public: true
-    shared: false
-    arguments:
-      - !tagged_iterator merconis_custom.exporters.order
-      - '%kernel.project_dir%'
-
-  # Order exporter services, auto tagged with _instanceof, therefore depending on implementing ExporterInterface -->
-  LeadingSystems\MerconisCustomStarterbaseBundle\Order\Exporter\Cash\Zentrallager\Exporter:
-    arguments:
-      - '%kernel.project_dir%'
-      - '@slugger'
-
   # Schedulable services -->
-  LeadingSystems\MerconisCustomStarterbaseBundle\Importer\Cash\ArticleConditionZentrallager\Processor:
-    arguments:
-      - '@LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\ImportFileHandler'
-      - '@LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\BatchInsertUpdate\BatchInsertUpdate'
-    tags:
-      - { name: merconis_custom.schedulable }
-
   LeadingSystems\MerconisCustomStarterbaseBundle\Importer\Cash\ArticleConditionZentrallager\Validator:
     arguments:
       - '@LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\ImportFileHandler'
-    tags:
-      - { name: merconis_custom.schedulable }
-
-  LeadingSystems\MerconisCustomStarterbaseBundle\Importer\Misc\FilterFields\Processor:
-    arguments:
-      - '@LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\ImportFileHandler'
-      - '@LeadingSystems\MerconisCustomStarterbaseBundle\CRUD\FilterFieldManager\FilterFieldManager'
     tags:
       - { name: merconis_custom.schedulable }
