@@ -2,8 +2,6 @@
 
 namespace Merconis\CustomStarterbase;
 
-// test
-
 use LeadingSystems\MerconisCustomStarterbaseBundle\Scheduler\Models\SchedulerJobModel;
 
 if (TL_MODE == 'BE') {
