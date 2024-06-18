@@ -22,8 +22,6 @@ services:
       - !tagged_iterator merconis_custom.schedulable
 
   # Schedulable services -->
-  LeadingSystems\MerconisCustomStarterbaseBundle\Importer\Cash\ArticleConditionZentrallager\Validator:
-    arguments:
-      - '@LeadingSystems\MerconisCustomStarterbaseBundle\ImportFileHandler\ImportFileHandler'
+  LeadingSystems\MerconisCustomStarterbaseBundle\Dummy\DummySchedulable:
     tags:
       - { name: merconis_custom.schedulable }
